@@ -35,7 +35,7 @@ public class UserController {
     @PutMapping("/me")
     public ResponseEntity<ApiResponse<UserResponse>> updateMe(
             @AuthenticationPrincipal UserPrincipal principal,
-            @RequestBody UpdateUserRequest request) {
+            @Valid @RequestBody UpdateUserRequest request) {
         UserResponse updated = userService.updateMe(principal.getId(), request);
         return ResponseEntity.ok(ApiResponse.success("Profile updated", updated));
     }
