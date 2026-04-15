@@ -42,6 +42,7 @@ public class JobNotification {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Builder.Default
     private NotificationStatus status = NotificationStatus.pending;
 
     public enum NotificationStatus {

@@ -36,6 +36,7 @@ public class ServiceRequest {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Builder.Default
     private RequestStatus status = RequestStatus.pending;
 
     // Location
