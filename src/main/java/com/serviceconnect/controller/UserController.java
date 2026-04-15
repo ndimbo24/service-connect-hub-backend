@@ -5,6 +5,7 @@ import com.serviceconnect.dto.response.ApiResponse;
 import com.serviceconnect.dto.response.UserResponse;
 import com.serviceconnect.security.UserPrincipal;
 import com.serviceconnect.service.UserService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
